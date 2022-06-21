@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Weather API</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script src="js/main.js" defer></script>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" />
+	</head>
+	<body>
+		<h1>Weather</h1>
+		<div class="myweather">
+			<fieldset>
+				<legend>Search current weather</legend>
+				<label for="city">City: </label>
+				<input type="text" name="city" id="city" />
+				<input type="button" class="button mybutton" id="getWeather" value="check" />
+				<article id="weather"></article>
+			</fieldset>
+		</div>
+		<h1>Destination</h1>
+		<br/>
+		 <div id="map" class="center"></div>
+	</body>
+</html>
